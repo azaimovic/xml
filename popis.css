@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+main{
+    max-width:1200px;
+    margin:0 auto;
+    background-color: #511281;
+}
+
+body{
+    background: #21094e;
+    color:white;
+}
+
+header{
+    width:100%;
+    background: #583d72;
+}
+
+
+
+footer p{
+    padding-top:30px;
+    color: white;    
+    text-align:center;
+    width:100%;
+    background-color:#583d72;
+    height:100px;
+    margin-bottom:0px;
+}
+
+.wrapper{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+h2{
+    margin-bottom:50px;
+    padding-top:30px;
+}
+
+td{
+    color:#e5e5e5;
+}
+
+th{
+    color:#e5e5e5;
+}
+
+
+.dole{
+    padding-bottom:30px;
+}
+/************************* Button *************************/
+
+button{
+    width: 100%;
+    padding:20px 0px;
+    border:none;
+    color:#e5e5e5;
+    background-color:#4ca1a3;
+}
+
+button:hover{
+    color:black;
+    background-color:#48cae4;
+    border:none;
+}
+
+/************************* Linkovi *************************/
+
+a {
+    text-decoration:none;
+    color:#e5e5e5;
+}
+
+a:hover{
+    text-decoration: none;
+    color:aqua;
+}
+

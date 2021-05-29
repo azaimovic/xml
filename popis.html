@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans+KR&family=Roboto+Mono&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="popis.css">
+    </head>
+    <body>
+            <div class="wrapper text-center">
+                <a href="index.html"><h2>Moj Popis</h2></a>
+            </div>
+            <main>
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <button type="button" onclick="loadDoc()">DOHVATI PODATKE</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <table class="table" id="mangaPopis"></table>
+                </div>
+            </div>  
+
+        
+            <div class="row">
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/boruto.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/95210/Boruto__Naruto_Next_Generations?q=boruto&cat=manga">Boruto</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/chainsaw.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/116778/Chainsaw_Man?q=chainsaw&cat=manga">Chainsaw Man</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/gantz.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/564/Gantz?q=gantz&cat=manga">Gantz</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/homun.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/936/Homunculus?q=homunculus&cat=manga">Homunculus</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/naruto.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/11/Naruto?q=naruto&cat=manga">Naruto</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/punpun.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/4632/Oyasumi_Punpun?q=punpun&cat=manga">Oyasumi Punpun</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/shaman.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/50/Shaman_King?q=shaman%20king&cat=manga">Shaman King</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/tokyo.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/33327/Tokyo_Ghoul?q=tokyo%20ghoul&cat=manga">Tokyo Ghoul</a></p>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;" class="col-xl-4 col-sm-12 col-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/jack.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/77815/Tokyo_Ghoul__Jack?q=tokyo%20ghoul&cat=manga">Tokyo Ghoul: "Jack"</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row dole">
+                <div style="margin-top:20px;"" class="col-xl-6 offset-xl-3 col-sm-12 col-md-4 offset-md-4">
+                    <div class="card" style="background-color:#511281; border:none;">
+                        <img class="mx-auto d-block" style="width:300px; height:350px; border-radius:3%;" src="img/ree.jpg">
+                        <p class="card-text text-center"><a target="_blank" href="https://myanimelist.net/manga/81117/Tokyo_Ghoul_re?q=tokyo%20ghoul%20&cat=manga">Tokyo Ghoul:re</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+
+                function loadDoc(){
+                    var req = new XMLHttpRequest();
+                    req.onreadystatechange = function(){
+                        if (this.readyState == 4 && this.status == 200){
+                            funkcija(this);
+                        }
+                    };
+                    req.open("GET", "mangalist.xml", true);
+                    req.send();
+                }
+        
+                function funkcija(xml){
+                    var i;
+                    var xmlDoc = xml.responseXML;
+                    var table="<tr><th>Naslov</th><th>Broj Knjiga</th><th>Broj Poglavlja</th><th>Moj broj pročitanih poglavlja</th><th>Status</th></tr>";
+                    var a = xmlDoc.getElementsByTagName("manga");
+                    for (i=0; i<a.length; i++){
+                        table += "<tr><td>" +
+                        a[i].getElementsByTagName("manga_title")[0].childNodes[0].nodeValue +
+                        "</td><td>" +
+                        a[i].getElementsByTagName("manga_volumes")[0].childNodes[0].nodeValue +
+                        "</td><td>" + 
+                        a[i].getElementsByTagName("manga_chapters")[0].childNodes[0].nodeValue +
+                        "</td><td>" + 
+                        a[i].getElementsByTagName("my_read_chapters")[0].childNodes[0].nodeValue +
+                        "</td><td>" + 
+                        a[i].getElementsByTagName("my_status")[0].childNodes[0].nodeValue +
+                        "</td></tr>";
+                    }
+                    document.getElementById("mangaPopis").innerHTML = table;
+                }
+            </script>
+        </main>
+
+        <footer>
+            <p>© Arijan Zaimović 2021 <br>TVZ</p>
+        </footer>
+    </body>
+    
+</html>
